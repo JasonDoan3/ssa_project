@@ -28,8 +28,11 @@ class Profile(models.Model):
     first_name = models.CharField(max_length=30)
     surname = models.CharField(max_length=30)
     nickname = models.CharField(max_length=30, unique=True, null=False, blank=False)
+<<<<<<< HEAD
     max_spend = models.DecimalField(max_digits=10, decimal_places=2, default=100.00)  # Max spend for each event
     balance = models.DecimalField(max_digits=10, decimal_places=2, default=100.00)  # User's current balance
+=======
+>>>>>>> 2a3c4a5d754279ec5c9e8b9f103c18f7e9823abc
 
     def clean(self):
         validate_unique_nickname(self.nickname, instance=self)
@@ -41,4 +44,7 @@ class Profile(models.Model):
     def __str__(self):
         return self.user.username
     
+<<<<<<< HEAD
     
+=======
+>>>>>>> 2a3c4a5d754279ec5c9e8b9f103c18f7e9823abc

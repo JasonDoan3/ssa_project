@@ -1,7 +1,10 @@
 from django import forms
 from .models import Group
+<<<<<<< HEAD
 from .models import Comment
 
+=======
+>>>>>>> 2a3c4a5d754279ec5c9e8b9f103c18f7e9823abc
 
 class GroupCreationForm(forms.ModelForm):
     class Meta:
@@ -19,6 +22,11 @@ class GroupCreationForm(forms.ModelForm):
             group.save()
             group.members.add(self.user)  # Add the admin to the members list
         return group
+<<<<<<< HEAD
+=======
+    
+from .models import Comment
+>>>>>>> 2a3c4a5d754279ec5c9e8b9f103c18f7e9823abc
 
 class CommentForm(forms.ModelForm):
     class Meta:

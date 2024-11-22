@@ -24,6 +24,7 @@ class Comment(models.Model):
     updated_at = models.DateTimeField(auto_now=True)  # Timestamp for the latest update
 
     def __str__(self):
+<<<<<<< HEAD
         return f"{self.user.username}: {self.content[:20]}..."  # Show only first 20 chars for preview
 
 class Event(models.Model):
@@ -50,3 +51,6 @@ class Event(models.Model):
         self.status = 'Active'
         return True
 
+=======
+        return f"{self.user.username}: {self.content[:20]}..."  # Show only first 20 chars for preview
+>>>>>>> 2a3c4a5d754279ec5c9e8b9f103c18f7e9823abc
